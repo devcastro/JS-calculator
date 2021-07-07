@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <div class='space'></div>
+
+    <div>
+    <div id='out'>
+        <!--the input box with 0 as default-->
+        <div id='history'>0</div>
+        <div id='display'>0</div>
+    </div>
+    <div id='calc'>
+        <!--buttons-->
+                <button class='operator' id='+'>+</button>
+                <button class='operator' id='-'>-</button>
+                <button class='operator' id='/'>&divide;</button>
+                <button class='operator' id='*'>&times;</button>
+        <button class='number' id='1'>1</button>
+        <button class='number' id='2'>2</button>
+        <button class='number' id='3'>3</button>
+        <button class='operator eq' id='='>=</button>
+        <button class='number' id='4'>4</button>
+        <button class='number' id='5'>5</button>
+        <button class='number' id='6'>6</button>
+        <button class='number' id='7'>7</button>
+        <button class='number' id='8'>8</button>
+        <button class='number' id='9'>9</button>
+        <button class='number' id='0'>0</button>
+        <button class='operator' id='.'>.</button>
+        <button class='operator' id='AC'>AC</button>
+        </div>
+    </div>
+
+    <!-- light switch -->
+    
+    <div id='toggle'>
+        <input type='checkbox' class='checkbox' id='checkbox'/>
+        <label for='checkbox' class='label'>
+            <div class='ball'></div>
+        </label> 
+    </div>
+</body>
+</html>
+
+
+<!-- Notes/ things I learned: 
+
+
+    [data-action] with a unique value.
+
+<div class="expand" data-action="expand">
+	Some content that can be collapsed or expanded.
+</div>
+var expand = document.querySelectorAll('[data-action="expand"]');
+
+This approach keeps your HTML, CSS, and JavaScript separate, 
+and makes it more clear what’s happening. It also helps prevent
+ accidental conflicts when someone changes the name of class not
+  realizing it’s used in JavaScript as well.
+-----
+JS .classList method
+If the class list of an element contains a specified class name, the toggle() method removes it. If the class list doesn’t contain the class name, the toggle() method adds it to the class list.
+Use the toggle() method to toggle a class.
+The following example uses the toggle() method to toggle the visible class of an element with the id content:
+
+let div = document.querySelector('#content');
+div.classList.toggle('visible');
+Code language: JavaScript (javascript)
+
+
+
+
+
+
+-->
